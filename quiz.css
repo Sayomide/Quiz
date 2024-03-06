@@ -1,0 +1,78 @@
+#header {
+        background-color: lightgrey;
+        animation: anime 5s ease alternate-reverse;
+}
+@keyframes anime {
+                from {
+                 transform: translateX(-45%)
+                  },
+                to   {
+                  transform: translateX(-105%)
+                }
+}
+#quizing {
+         
+         font-size: 2.4rem;
+         text-align: center;
+         font-weight: bold;
+         font-family: times new roman;
+         padding-top: 10px;
+         padding-bottom: 10px;
+         background-color: pink;
+         background-size: cover;
+         width: 100%;
+
+        animation: anime 5s ease 1s alternate-reverse;
+}
+.instructions h1 {
+                 color: red;
+                 font-size: 2.2rem;
+                 text-align: center;
+        animation: anime 5s ease 2s alternate-reverse;
+}
+.instructions li {
+                list-style: square red;
+                font-size: 1.5rem;
+                padding: 10px;
+        animation: anime 5s ease 3s alternate-reverse;
+}
+.instructions li::nth-child(1) {
+        animation: anime 5s ease 4s alternate-reverse;
+}
+.instructions li::nth-child(2) {
+        animation: anime 5s ease 6s alternate-reverse;
+}
+.qqq {
+     font-size: 1.7rem;
+     background-color: skyblue;
+     text-align: center;
+     font-weight: bold;
+     padding: 10px;
+}
+.qqqq {
+      font-size: 1.5rem;
+      text-indent: 20px;
+      margin: 10px;
+      font-weight: bold;
+}
+#form p  {
+         font-size: 1.1rem;
+}
+.btn input {color:red;
+            border-radius: 20px;
+            padding: 7px;
+            width: 100px;
+            font-size: 1.1rem;
+}
+.btn input:hover {
+                 color:blue;
+                 background-color: blanchedalmond;
+                 transform: translateX(300%);
+}
+.last h1 {color: blueviolet;
+          font-size: 3em;
+          font-family: Times New Roman;
+          text-align: center;
+          margin: 50px;
+         
+}
