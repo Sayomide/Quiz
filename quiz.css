@@ -1,17 +1,7 @@
 #header {
         background-color: lightgrey;
-        animation: anime 5s ease alternate-reverse;
-}
-@keyframes anime {
-                from {
-                 transform: translateX(-45%)
-                  },
-                to   {
-                  transform: translateX(-105%)
-                }
 }
 #quizing {
-         
          font-size: 2.4rem;
          text-align: center;
          font-weight: bold;
@@ -21,26 +11,35 @@
          background-color: pink;
          background-size: cover;
          width: 100%;
-
-        animation: anime 5s ease 1s alternate-reverse;
+         animation: anime 2s ease alternate-reverse;
 }
 .instructions h1 {
                  color: red;
                  font-size: 2.2rem;
                  text-align: center;
-        animation: anime 5s ease 2s alternate-reverse;
+        animation: anime 5s ease alternate-reverse;
 }
 .instructions li {
                 list-style: square red;
                 font-size: 1.5rem;
                 padding: 10px;
-        animation: anime 5s ease 3s alternate-reverse;
+        animation: anime 9s ease alternate-reverse;
 }
+/*
 .instructions li::nth-child(1) {
-        animation: anime 5s ease 4s alternate-reverse;
+        animation: anime 5s ease;
 }
 .instructions li::nth-child(2) {
-        animation: anime 5s ease 6s alternate-reverse;
+        animation: anime 5s ease;
+}
+*/
+@keyframes anime {
+                from {
+                 opacity:1;
+                  }
+                to   {
+                  opacity:0;
+                }
 }
 .qqq {
      font-size: 1.7rem;
@@ -58,7 +57,8 @@
 #form p  {
          font-size: 1.1rem;
 }
-.btn input {color:red;
+.btn input {
+            color:red;
             border-radius: 20px;
             padding: 7px;
             width: 100px;

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <script src="quiz.js"> </script>
+  <script src="quiz.js"></script>
   <link rel="stylesheet" href="quiz.css">
 </head>
 
@@ -19,10 +18,10 @@
   </div>  
 </div>
 
-<form id="form">
+<form id="form" class="formone">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 1. What is my name </div>
-<p><input type="radio" name="myq" id="correct" onclick="myFunction()"> Mukaila Sodiq</p>
+<p><input type="radio" name="myq" id="correct"> Mukaila Sodiq</p>
 <p><input type="radio" name="myq"> Sodiq Ayomide</p>
 <p><input type="radio" name="myq"> Sodiq Mukaila</p>
 <p><input type="radio" name="myq"> Ayomide Mukaila</p>
@@ -31,18 +30,18 @@
 <form id="form">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 2. How many states do we have in Nigeria </div>
-<p><input type="radio" name="myq"> 12</p>
-<p><input type="radio" name="myq"> 90</p>
-<p><input type="radio" name="myq" id="correct"> 36</p>
-<p><input type="radio" name="myq"> 3</p>
+<p><input type="radio" name="state"> 12</p>
+<p><input type="radio" name="state"> 90</p>
+<p><input type="radio" name="state" id="correct"> 36</p>
+<p><input type="radio" name="state"> 3</p>
 </form>
 
-<span class="btn"><a href="quiz2.html"><input type="button" value="Next>">
-</span> </a>
+<span class="btn" onclick="toSecond()">
+    <input type="button" value="Next>">
+</span> 
 
   
   
   
 </body>
-
 </html>

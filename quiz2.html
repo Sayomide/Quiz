@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
+  <script src="quiz.js"></script>
   <link rel="stylesheet" href="quiz.css">
 </head>
 
@@ -12,30 +12,30 @@
 <form id="form">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 3. Who is the current president of Nigeria </div>
-<p><input type="radio" name="myq"> Yemi Osinbajo</p>
-<p><input type="radio" name="myq">Odunlade Adekola</p>
-<p><input type="radio" name="myq" id="correct">Muhammadu Buhari</p>
-<p><input type="radio" name="myq"> a & c </p>
+<p><input type="radio" name="presi"> Yemi Osinbajo</p>
+<p><input type="radio" name="presi">Odunlade Adekola</p>
+<p><input type="radio" name="presi" id="correct">Muhammadu Buhari</p>
+<p><input type="radio" name="presi"> a & c </p>
 </form>
 
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 4. Who is the arguably best striker(s) in the world </div>
-<p><input type="radio" name="myq"> Cristiano Ronaldo</p>
-<p><input type="radio" name="myq"> Zlatan Ibrahimovic</p>
-<p><input type="radio" name="myq" id="correct"> a & d </p>
-<p><input type="radio" name="myq"> Lionel Messi </p>
+<p><input type="radio" name="striker"> Cristiano Ronaldo</p>
+<p><input type="radio" name="striker"> Zlatan Ibrahimovic</p>
+<p><input type="radio" name="striker" id="correct"> a & d </p>
+<p><input type="radio" name="strike"> Lionel Messi </p>
 
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 5. Choose the one that is Odd in this category </div>
-<p><input type="radio" name="myq" id="correct"> Car </p>
-<p><input type="radio" name="myq"> Brake</p>
-<p><input type="radio" name="myq"> Engine </p>
-<p><input type="radio" name="myq"> Glass</p>
+<p><input type="radio" name="odd" id="correct"> Car </p>
+<p><input type="radio" name="odd"> Brake</p>
+<p><input type="radio" name="odd"> Engine </p>
+<p><input type="radio" name="odd"> Glass</p>
 
-<span class="btn"><a href="quiz3.html"><input type="button" value="Next>">
-</span> </a>
+<span class="btn" onclick="toThird()">
+    <input type="button" value="Next>">
+</span>
 
 
 </body>
-
 </html>
