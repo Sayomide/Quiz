@@ -4,38 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-  <script src="quiz.js"></script>
   <link rel="stylesheet" href="quiz.css">
 </head>
-
 <body>
-<form id="form">
+  
+<form id="form" class="formthree">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 3. Who is the current president of Nigeria </div>
-<p><input type="radio" name="presi"> Yemi Osinbajo</p>
-<p><input type="radio" name="presi">Odunlade Adekola</p>
-<p><input type="radio" name="presi" id="correct">Muhammadu Buhari</p>
-<p><input type="radio" name="presi"> a & c </p>
+<p><label><input type="radio" name="presi"> Yemi Osinbajo</label></p>
+<p><label><input type="radio" name="presi">Odunlade Adekola</label></p>
+<p><label><input type="radio" name="presi" id="correct">Muhammadu Buhari</label></p>
+<p><label><input type="radio" name="presi"> a & c </label></p>
 </form>
 
+<form id="form" class="formfour">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 4. Who is the arguably best striker(s) in the world </div>
-<p><input type="radio" name="striker"> Cristiano Ronaldo</p>
-<p><input type="radio" name="striker"> Zlatan Ibrahimovic</p>
-<p><input type="radio" name="striker" id="correct"> a & d </p>
-<p><input type="radio" name="strike"> Lionel Messi </p>
+<p><label><input type="radio" name="striker"> Cristiano Ronaldo</label></p>
+<p><label><input type="radio" name="striker"> Zlatan Ibrahimovic</label></p>
+<p><label><input type="radio" name="striker" id="correct"> a & d </label></p>
+<p><label><input type="radio" name="striker"> Lionel Messi </label></p>
+</form>
 
+<form id="form" class="formfive">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 5. Choose the one that is Odd in this category </div>
-<p><input type="radio" name="odd" id="correct"> Car </p>
-<p><input type="radio" name="odd"> Brake</p>
-<p><input type="radio" name="odd"> Engine </p>
-<p><input type="radio" name="odd"> Glass</p>
+<p><label><input type="radio" name="odd" id="correct"> Car </label></p>
+<p><label><input type="radio" name="odd"> Brake</label></p>
+<p><label><input type="radio" name="odd"> Engine</label></p>
+<p><label><input type="radio" name="odd"> Glass</label></p>
+</form>
 
 <span class="btn" onclick="toThird()">
     <input type="button" value="Next>">
 </span>
 
 
+<script src="quiz2.js"></script>
 </body>
 </html>
