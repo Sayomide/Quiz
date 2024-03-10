@@ -5,37 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
-<script src="quiz.js"></script>
    <link rel="stylesheet" href="quiz.css">
 </head>
-
 <body>
-<form id="form">
+<form id="form" class="formsix">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 6. What is the most common surname in the United States? </div>
-<p><input type="radio" name="surname"> Mike </p>
-<p><input type="radio" name="surname" id="sixthQuestion"> Smith </p>
-<p><input type="radio" name="surname"> Simon </p>
-<p><input type="radio" name="surname"> Joseph</p>
+<p><label><input type="radio" name="surname"> Mike </label></p>
+<p><label><input type="radio" name="surname" id="correct"> Smith </label></p>
+<p><label><input type="radio" name="surname"> Simon </label></p>
+<p><label><input type="radio" name="surname"> Joseph</label></p>
+</form>
 
+<form id="form" class="formseven">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 7. How many elements are in the periodic table </div>
-<p><input type="radio" name="elements" > 200 </p>
-<p><input type="radio" name="elements"> 502 </p>
-<p><input type="radio" name="elements" id="seventhQuestion"> 118 </p>
-<p><input type="radio" name="elements"> 59 </p>
+<p><label><input type="radio" name="elements" > 200 </label></p>
+<p><label><input type="radio" name="elements"> 502 </label></p>
+<p><label><input type="radio" name="elements" id="correct"> 118 </label></p>
+<p><label><input type="radio" name="elements"> 59 </label></p>
+</form>
 
+<form id="form" class="formeight">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 8. How many hearts does an octopus have </div>
-<p><input type="radio" name="octopus"> 1 </p>
-<p><input type="radio" name="octopus"> 5 </p>
-<p><input type="radio" name="octopus" id="eightQuestion"> 3 </p>
-<p><input type="radio" name="octopus"> 10 </p>
+<p><label><input type="radio" name="octopus"> 1 </label></p>
+<p><label><input type="radio" name="octopus"> 5 </label></p>
+<p><label><input type="radio" name="octopus" id="correct"> 3 </label></p>
+<p><label><input type="radio" name="octopus"> 10 </label></p>
 </form>
 
 <span class="btn" onclick="toFourth()">
   <input type="button" value="Next>">
 </span> 
 
+<script src="quiz3.js"></script>
 </body>
 </html>

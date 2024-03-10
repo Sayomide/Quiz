@@ -4,8 +4,8 @@ let firstQuestionValues = [];
 let secondQuestionValues = [];
 let thirdQuestionValues = [];
 
-function thirdquestion() {
-let mainform = document.querySelector(".formthree");
+function fourthquestion() {
+let mainform = document.querySelector(".formsix");
 let allinput = mainform.querySelectorAll('input[type=radio');
 allinput.forEach(eachInput => {
 eachInput.addEventListener("click", (e) => {
@@ -17,8 +17,8 @@ firstQuestionValues.push(valueToAdd);
   });
 };
 
-function fourthquestion() {
-  let form2 = document.querySelector(".formfour");
+function fifthquestion() {
+  let form2 = document.querySelector(".formseven");
   let allinput2 = form2.querySelectorAll('input[type=radio]');
   allinput2.forEach(eachInput => {
     eachInput.addEventListener("click", (e) => {
@@ -30,12 +30,12 @@ secondQuestionValues.push(valueToAdd2);
   })
 };
 
-function fifthquestion(){
-  let form3 = document.querySelector(".formfive");
+function sixthquestion() {
+  let form3 = document.querySelector(".formeight");
   let allinput3 = form3.querySelectorAll('input[type=radio]');
   allinput3.forEach(eachInput => {
     eachInput.addEventListener("click", (e) => {
-let clickedContent3=e.target.parentElement.innerHTML;
+let clickedContent3= e.target.parentElement.innerHTML;
 let valueToAdd3 = clickedContent3.includes('id="correct"') ? correctScore : incorrectScore;
 thirdQuestionValues = [];
 thirdQuestionValues.push(valueToAdd3);
@@ -43,13 +43,13 @@ thirdQuestionValues.push(valueToAdd3);
   })
 };
 
-thirdquestion();
 fourthquestion();
 fifthquestion();
+sixthquestion();
 
-function toThird() {
+function toFourth() {
  let storedArray = JSON.parse(localStorage.getItem("newArray"));
 let mergedArray = storedArray.concat(firstQuestionValues, secondQuestionValues, thirdQuestionValues);
 localStorage.setItem("newArray", JSON.stringify(mergedArray));
-window.location.href = "quiz3.html";
+window.location.href = "quiz4.html";
 };
