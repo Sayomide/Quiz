@@ -1,32 +1,43 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
    <link rel="stylesheet" href="quiz.css">
-   <script src="quiz.js"> </script>
 </head>
 <body>
 
+<form id="form" class="formnine">
 <div class="qqq"> Questions: </div>
 <div class="qqqq"> 9. Who is the world richest man </div>
-<p><input type="radio" name="richest"> Bill Gate </p>
-<p><input type="radio" name="richest"> Femi Otedola </p>
-<p><input type="radio" name="richest" id="ninthQuestion"> Elon Musk </p>
-<p><input type="radio" name="richest"> Dangote </p>
-
+<p><label><input type="radio" name="richest"> Bill Gate </label></p>
+<p><label><input type="radio" name="richest"> Femi Otedola </label></p>
+<p><label><input type="radio" name="richest" id="correct"> Elon Musk </label></p>
+<p><label><input type="radio" name="richest"> Dangote</label></p>
+</form>
+  
+<form id="form" class="formten">
 <div class="qqq"> Questions: </div>
-<div class="qqqq"> 9. Which of this is Odd </div>
-<p><input type="radio" name="oddd"> Britain </p>
-<p><input type="radio" name="oddd"> America </p>
-<p><input type="radio" name="oddd" id="tenthQuestion"> Canadian </p>
-<p><input type="radio" name="oddd"> Egypt </p>
+<div class="qqqq"> 10. Which of this is Odd </div>
+<p><label><input type="radio" name="oddd"> Britain </label></p>
+<p><label><input type="radio" name="oddd"> America </label></p>
+<p><label><input type="radio" name="oddd"> Canadian </label></p>
+<p><label><input type="radio" name="oddd" id="correct"> Egypt </label></p>
+</form>
 
 <div class="last">
   <h1 onClick="result()"> My Result </h1>
 </div>
 
+<div class="popup">
+  <div class="box">
+    <p class=""> You scored:</p>
+    <p class=""><span class="">10</span>/100</p>
+    <button id="btn">Okay👍</button>
+  </div>
+</div>
+
+<script src="quiz4.js"> </script>
 </body>
 </html>
