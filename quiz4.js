@@ -2,6 +2,9 @@ correctScore = 10;
 incorrectScore = 0;
 let firstQuestionValues = [];
 let secondQuestionValues = [];
+let theBtn = document.querySelector("#btn");
+let score = document.querySelector(".score");
+let allPopup = document.querySelector(".popup");
 
 function ninethquestion() {
 let mainform = document.querySelector(".formnine");
@@ -32,11 +35,24 @@ secondQuestionValues.push(valueToAdd2);
 ninethquestion();
 tenthquestion();
 
-
-function result() {
- let storedArray = JSON.parse(localStorage.getItem("newArray"));
+function arrayFunction(){
+let total = 0;
+let storedArray = JSON.parse(localStorage.getItem("newArray"));
 let mergedArray = storedArray.concat(firstQuestionValues, secondQuestionValues);
-console.log(mergedArray);
-//localStorage.setItem("newArray", JSON.stringify(mergedArray));
-//window.location.href = "quiz4.html";
-};
+localStorage.setItem("newArray", JSON.stringify(mergedArray));
+ mergedArray.forEach(eachScore => {
+    total += eachScore;
+  })
+score.innerText = total;
+}
+
+function whatsNext(){
+arrayFunction();
+  allPopup.style.display = "flex";
+  allPopup.style.justifyContent = "center";
+  allPopup.style.alignItems = "center";
+}
+
+function redirect(){
+  window.location.href = "index.html";
+}
